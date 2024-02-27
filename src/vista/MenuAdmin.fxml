@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.MenuAdminController">
+   <children>
+      <BorderPane layoutX="221.0" layoutY="190.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label text="MENU ADMIN" BorderPane.alignment="TOP_CENTER">
+               <font>
+                  <Font name="Broadway" size="35.0" />
+               </font>
+            </Label>
+         </top>
+         <left>
+            <VBox prefHeight="560.0" prefWidth="216.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnRegistrarLibro" mnemonicParsing="false" onAction="#ResgistrarLibro" text="Registrar Libro">
+                     <font>
+                        <Font name="Broadway" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnGestionarUsuarios" mnemonicParsing="false" onAction="#GestionarUsuarios" text="Gestionar Usuarios">
+                     <font>
+                        <Font name="Broadway" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnGestionarLibro" mnemonicParsing="false" onAction="#GestionarLibro" text="Gestionar Libro">
+                     <font>
+                        <Font name="Broadway" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRegistroDeTransacciones" mnemonicParsing="false" onAction="#RegistroDeTransacciones" prefHeight="50.0" prefWidth="143.0" text="Registro de transacciones" wrapText="true">
+                     <font>
+                        <Font name="Broadway" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSalirMenuAdmin" alignment="CENTER" mnemonicParsing="false" onAction="#SalirMenuAdmin" prefHeight="50.0" prefWidth="68.0" text="Salir" wrapText="true">
+                     <font>
+                        <Font name="Broadway" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <ListView fx:id="listMenuAdmin" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InterfazController">
+   <children>
+      <BorderPane layoutX="142.0" layoutY="72.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: 0000FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnIngresoAdmin" alignment="CENTER" layoutX="174.0" layoutY="339.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showLogeoAdmin" text="INGRESAR" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="400.0" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../fotos/Admin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Button fx:id="btnIngresoCliente" alignment="CENTER" layoutX="165.0" layoutY="336.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showLogeoCliente" text="INGRESAR" textOverrun="CLIP" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="400.0" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../fotos/Cliente.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+         <top>
+            <AnchorPane prefHeight="51.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="316.0" layoutY="17.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="BIBLIOTECA MUNICIPAL" textAlignment="CENTER" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+                     <font>
+                        <Font name="Bell MT" size="50.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="SE_RESIZE" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

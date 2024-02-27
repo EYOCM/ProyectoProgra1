@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.MenuClienteController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="60.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <SplitPane layoutX="263.0" layoutY="154.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <BorderPane layoutX="278.0" layoutY="154.0" prefHeight="598.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <Label text="MENU CLIENTES" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold Italic" size="38.0" />
+                                 </font>
+                              </Label>
+                           </top>
+                           <left>
+                              <VBox alignment="TOP_CENTER" prefHeight="543.0" prefWidth="230.0" spacing="20.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="btnPrestarLibro" alignment="TOP_CENTER" lineSpacing="20.0" mnemonicParsing="false" onAction="#ShowBooks" text="PRESTAMOS" wrapText="true">
+                                       <font>
+                                          <Font name="Broadway" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnDevolverLibro" alignment="BOTTOM_CENTER" lineSpacing="20.0" mnemonicParsing="false" onAction="#DevolverLibro" text="DEVOLUCIONES" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="Broadway" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnMultas" lineSpacing="20.0" mnemonicParsing="false" onAction="#ConsultarMulta" text="MULTAS">
+                                       <font>
+                                          <Font name="Broadway" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <VBox>
+                                       <children>
+                                          <Button fx:id="btnRegistroTransacciones" lineSpacing="20.0" mnemonicParsing="false" onAction="#MostrarHistorialLibros" text="REGISTRO DE TRANSACCIONES" wrapText="true">
+                                             <font>
+                                                <Font name="Broadway" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <Button fx:id="btnEstatusPrestamo" ellipsisString="20" lineSpacing="20.0" mnemonicParsing="false" onAction="#VerEstadoDelPrestamo" text="ESTATUS DE PRESTAMO">
+                                       <font>
+                                          <Font name="Broadway" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnSalir" ellipsisString="20" lineSpacing="20.0" mnemonicParsing="false" onAction="#VolveraMenuPrincipal" text="Salir">
+                                       <font>
+                                          <Font name="Broadway" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </left>
+                           <center>
+                              <ListView fx:id="listBuscarLibro" prefHeight="543.0" prefWidth="246.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

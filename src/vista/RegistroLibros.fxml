@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controlador.RegistroLibrosController">
+   <children>
+      <AnchorPane layoutX="183.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane layoutX="168.0" layoutY="128.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <Label alignment="TOP_CENTER" text="REGISTRO DE LIBROS" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Broadway" size="29.0" />
+                     </font>
+                  </Label>
+               </top>
+               <left>
+                  <HBox prefHeight="566.0" prefWidth="457.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="566.0" prefWidth="183.0" spacing="30.0">
+                           <children>
+                              <Label text="ISBN">
+                                 <font>
+                                    <Font name="Bell MT" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Titulo">
+                                 <font>
+                                    <Font name="Bell MT" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Autor">
+                                 <font>
+                                    <Font name="Bell MT" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Año de publicacion">
+                                 <font>
+                                    <Font name="Bell MT" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Editorial">
+                                 <font>
+                                    <Font name="Bell MT" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Cantidad">
+                                 <font>
+                                    <Font name="Bell MT" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnAgregarLibroAlRegistro" mnemonicParsing="false" onAction="#AgregarLibroAlRegistro" text="Agregar" />
+                              <Button fx:id="btnSalirRegistroLibros" mnemonicParsing="false" onAction="#SalirRegistroLibros" text="Salir" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="566.0" prefWidth="275.0" spacing="30.0">
+                           <children>
+                              <TextField fx:id="TxtIsbn" onAction="#getTxtIsbn" />
+                              <TextField fx:id="TxtTitulo" onAction="#getTxtTitulo" />
+                              <TextField fx:id="TxtAutor" onAction="#getTxtAutor" />
+                              <TextField fx:id="TxtAñoPublicacion" onAction="#getTxtAñoPublicacion" />
+                              <TextField fx:id="TextEditorial" onAction="#getTextEditorial" />
+                              <TextField fx:id="TxtCantidadIngresar" onAction="#getTxtCantidadIngresar" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

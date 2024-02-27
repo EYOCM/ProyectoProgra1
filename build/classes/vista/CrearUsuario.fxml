@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CrearUsuarioController">
+   <children>
+      <AnchorPane layoutX="210.0" layoutY="48.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="286.0" layoutY="27.0" text="CREAR NUIEVO USUARIO" textAlignment="CENTER" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+               <font>
+                  <Font name="Bell MT" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="96.0" text="Nombre:">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="188.0" text="Usuario:">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="238.0" text="Contraseña:">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="140.0" text="Apellido:">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPswd" layoutX="191.0" layoutY="238.0" onAction="#getTextPswd" prefHeight="25.0" prefWidth="292.0" />
+            <TextField fx:id="txtNombre" layoutX="191.0" layoutY="96.0" onAction="#getTextNombre" prefHeight="25.0" prefWidth="292.0" />
+            <TextField fx:id="txtApellido" layoutX="191.0" layoutY="140.0" onAction="#getTextApellido" prefHeight="25.0" prefWidth="292.0" />
+            <TextField fx:id="txtUser" layoutX="191.0" layoutY="188.0" onAction="#getTextUser" prefHeight="25.0" prefWidth="292.0" />
+            <Button fx:id="btnCrearUsuario" layoutX="429.0" layoutY="434.0" mnemonicParsing="false" onAction="#getCrearUsuario" text="Crear" />
+            <Button fx:id="btnCancel" layoutX="421.0" layoutY="470.0" mnemonicParsing="false" onAction="#cancel" text="Cancelar" />
+            <TextField fx:id="TextCui" layoutX="191.0" layoutY="332.0" onAction="#getTextCui" prefHeight="25.0" prefWidth="292.0" />
+            <TextField fx:id="txtTel" layoutX="191.0" layoutY="284.0" onAction="#getTextTel" prefHeight="25.0" prefWidth="292.0" />
+            <PasswordField fx:id="txtDireccion" layoutX="191.0" layoutY="382.0" onAction="#getTextDireccion" prefHeight="25.0" prefWidth="292.0" />
+            <Label layoutX="75.0" layoutY="284.0" text="Telefono:">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="382.0" text="Direccion:">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="332.0" text="Cui:">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
