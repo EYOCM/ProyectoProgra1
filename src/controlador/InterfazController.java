@@ -18,7 +18,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import javax.swing.plaf.basic.BasicBorders;
+import javafxapplication16.ListaLibros;
+import javafxapplication16.ListaUsuarios;
 
 /**
  *
@@ -30,11 +31,19 @@ public class InterfazController implements Initializable {
     private Button btnIngresoAdmin;
     private Button btnIngresoCliente;
     
+    
+    // instancia de las bases de datos para acceder a las mismas 
+    static ListaUsuarios BBDUsuarios  = new ListaUsuarios();
+    static ListaLibros BBDLibros = new ListaLibros();
+   
+    // accion que se raalizara al presionar el boton de ingreso desde la interfaz principal
     @FXML
     private void showLogeoAdmin(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/logeo.fxml"));
         Parent root = loader.load();
         LogeoController controlador = loader.getController();
+        controlador.initVariable("Administrador"); // asignamos una variable para indicar que tiipo de usuario accedio
+        
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
@@ -52,11 +61,13 @@ public class InterfazController implements Initializable {
         
         
     }
+    // accion que se raalizara al presionar el boton de ingreso desde la interfaz principal
         @FXML
     void showLogeoCliente(ActionEvent event) throws IOException {
-             FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/logeo.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/logeo.fxml"));
         Parent root = loader.load();
         LogeoController controlador = loader.getController();
+        controlador.initVariable("Cliente");// asignamos una variable para indicar que tiipo de usuario accedio
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
@@ -68,7 +79,9 @@ public class InterfazController implements Initializable {
                 Logger.getLogger(InterfazController.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
-
+        
+        Stage myStage = (Stage) this.btnIngresoAdmin.getScene().getWindow();
+        myStage.close();
     }
     
     @Override
@@ -77,7 +90,10 @@ public class InterfazController implements Initializable {
     }    
 
     void closeWindow() {
+        Stage myStage = (Stage) this.btnIngresoAdmin.getScene().getWindow();
+        myStage.close();
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }

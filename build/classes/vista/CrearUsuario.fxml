@@ -11,7 +11,7 @@
    <children>
       <AnchorPane layoutX="210.0" layoutY="48.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="286.0" layoutY="27.0" text="CREAR NUIEVO USUARIO" textAlignment="CENTER" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
+            <Label fx:id="txtTitulo" layoutX="286.0" layoutY="27.0" text="CREAR NUEVO " textAlignment="CENTER" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
                <font>
                   <Font name="Bell MT" size="31.0" />
                </font>

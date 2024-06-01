@@ -3,16 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/controlador/RegistroLibrosController.java</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/controlador/LogeoController.java</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/vista/PrestamoLibro.fxml</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/vista/RegistroLibros.fxml</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/controlador/InterfazController.java</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/controlador/CrearUsuarioController.java</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/controlador/PrestamoLibroController.java</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/javafxapplication16/JavaFXApplication16.java</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/controlador/MenuClienteController.java</file>
-            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/src/controlador/MenuAdminController.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/BaseDeDatos1/BBD.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/javafxapplication16/ListaUsuarios.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/controlador/CrearUsuarioController.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/controlador/GestionarUsuariosController.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/javafxapplication16/BBDMemoria.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/BaseDeDatos1/Conexion.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/javafxapplication16/Usuario.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/javafxapplication16/ListaLibros.java</file>
+            <file>file:/C:/Users/Windows%2010/Documents/NetBeansProjects/JavaFXApplication16/JavaFXApplication16/src/BaseDeDatos1/UsuariosDB.java</file>
         </group>
     </open-files>
 </project-private>

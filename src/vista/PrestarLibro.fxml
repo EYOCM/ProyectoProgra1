@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrestarLibroController">
+   <children>
+      <AnchorPane layoutX="131.0" layoutY="47.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="594.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <Label text="PRESTAMOS" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="29.0" />
+                     </font>
+                  </Label>
+               </top>
+               <left>
+                  <VBox prefHeight="357.0" prefWidth="172.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="173.0" text="BUSCAR LIBRO" />
+                        <TextField fx:id="txtBuscarLibro" alignment="CENTER" prefHeight="25.0" prefWidth="151.0" promptText="Ingrese el nombre  del libro" />
+                        <Button fx:id="btnBuscarLibro" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#BotonParaBuscarLibroEnBBDLibros" text="Buscar" textAlignment="CENTER" />
+                        <Button fx:id="btnPrestarLibro" mnemonicParsing="false" onAction="#BotonParaRealizarPrestamoLibro" text="Realizar prestamo" />
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <TableView fx:id="Table1" onSort="#TableEvent" prefHeight="195.0" prefWidth="422.0" BorderPane.alignment="CENTER">
+                     <columns>
+                        <TableColumn fx:id="TableColumnISBN" prefWidth="49.0" text="ISBN" />
+                        <TableColumn fx:id="TableColumnTitulo" prefWidth="140.0" text="Titulo" />
+                        <TableColumn fx:id="TableColumnAutor" prefWidth="124.0" text="Autor" />
+                        <TableColumn fx:id="TableColumnPublicacion" prefWidth="89.0" text="Publicacion" />
+                        <TableColumn fx:id="TableColumnEditorial" prefWidth="70.0" text="Editorial" />
+                        <TableColumn fx:id="TableColumnExistencia" prefWidth="82.0" text="Existencia" />
+                     </columns>
+                  </TableView>
+               </center>
+               <bottom>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextArea prefHeight="100.0" prefWidth="174.0" />
+                        <TextArea fx:id="txtResultadosBusqueda" prefHeight="100.0" prefWidth="425.0" />
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

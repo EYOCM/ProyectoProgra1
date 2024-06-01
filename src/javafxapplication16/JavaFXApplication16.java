@@ -5,6 +5,7 @@
  */
 package javafxapplication16;
 
+import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,9 +18,14 @@ import javafx.stage.Stage;
  */
 public class JavaFXApplication16 extends Application {
     
+    //instancia de la base de datos para que se pueda acceder desde cualquier punto
+     public static BBDMemoria Base_En_Memoria = new BBDMemoria();
+    
+     // metodo start para mostrar las ventanas
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/vista/Interfaz.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("/vista/GestionarUsuarios.fxml"));
         
         Scene scene = new Scene(root);
         

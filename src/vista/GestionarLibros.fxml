@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.GestionarLibrosController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="370.0" prefWidth="145.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#AgregarLibro" text="Agregar" />
+                  <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#ModificarLibro" text="Modificar" />
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#EliminarLibro" text="Eliminar" />
+                  <Label text="Buscar" />
+                  <TextField fx:id="txtBuscarLibro" onAction="#BuscarLibroDesdeEltxt" />
+                  <Button fx:id="btnBuscarLibro" mnemonicParsing="false" onAction="#BuscarLibro" text="Buscar" />
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <Label text="GESTIONAR LIBROS" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <TableView fx:id="Table1" onSort="#TableEvent" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="TableColumnISBN" prefWidth="49.0" text="ISBN" />
+                <TableColumn fx:id="TableColumnTitulo" prefWidth="140.0" text="Titulo" />
+                  <TableColumn fx:id="TableColumnAutor" prefWidth="124.0" text="Autor" />
+                  <TableColumn fx:id="TableColumnPublicacion" prefWidth="89.0" text="Publicacion" />
+                  <TableColumn fx:id="TableColumnEditorial" prefWidth="70.0" text="Editorial" />
+                  <TableColumn fx:id="TableColumnExistencia" prefWidth="82.0" text="Existencia" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

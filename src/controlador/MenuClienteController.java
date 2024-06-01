@@ -5,13 +5,20 @@
  */
 package controlador;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -41,30 +48,65 @@ public class MenuClienteController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-
-    @FXML
-    private void ShowBooks(ActionEvent event) {
     }
 
     @FXML
-    private void DevolverLibro(ActionEvent event) {
+    private void ShowBooks(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/PrestarLibro.fxml"));
+        Parent root = loader.load();
+       PrestarLibroController controlador = loader.getController();
+    //  controlador.Variable("Cliente");
+    //  controlador.initVentana("Agregar Libro Gestion");
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+        stage.setOnCloseRequest(e -> {
+            controlador.closeWindow();
+        });
+        
+        Stage myStage = (Stage) this.btnDevolverLibro.getScene().getWindow();
+        myStage.close();
+        
+        }
+    
+
+
+@FXML
+        private void DevolverLibro(ActionEvent event) {
     }
 
     @FXML
-    private void ConsultarMulta(ActionEvent event) {
+        private void ConsultarMulta(ActionEvent event) {
     }
 
     @FXML
-    private void MostrarHistorialLibros(ActionEvent event) {
+        private void MostrarHistorialLibros(ActionEvent event) {
     }
 
     @FXML
-    private void VerEstadoDelPrestamo(ActionEvent event) {
+        private void VerEstadoDelPrestamo(ActionEvent event) {
     }
 
     @FXML
-    private void VolveraMenuPrincipal(ActionEvent event) {
+        private void VolveraMenuPrincipal(ActionEvent event) {
+    }
+    void closeWindow() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/MenuCliente.fxml"));
+        Parent root = loader.load();
+        InterfazController controlador = loader.getController();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+        stage.setOnCloseRequest(e -> {
+            controlador.closeWindow();
+        });
+
+        Stage myStage = (Stage) this.btnDevolverLibro.getScene().getWindow();
+        myStage.close();
+
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
